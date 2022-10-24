@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: __wrapped_aars__::apulsetech_rfid_lib:unspecified@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/apulsetech_rfid_lib/build/.transforms/ed6f719bc27ad48f3601828ca9d6e54e/transformed/jetified-apulsetech_unified_lib/res" />
+      <root url="file://$PROJECT_DIR$/apulsetech_rfid_lib/build/.transforms/ed6f719bc27ad48f3601828ca9d6e54e/transformed/jetified-apulsetech_unified_lib/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/apulsetech_rfid_lib/build/.transforms/ed6f719bc27ad48f3601828ca9d6e54e/transformed/jetified-apulsetech_unified_lib/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
