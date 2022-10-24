@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">RFID Inventory Sample</string>
+    <string name="app_discovery_device_name">Discovery Device</string>
+    <string name="app_selection_mask_name">Selection Mask Configuration</string>
+
+    <string name="menu_discovery_device">Discovery Device</string>
+    <string name="menu_reconnect_device">Reconnect Device</string>
+    <string name="menu_disconnect_device">Disconnect Device</string>
+
+    <string name="action_start_discovering">Start Discovery</string>
+    <string name="action_stop_discovering">Stop Discovery</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_mask">Mask</string>
+    <string name="action_inventory">Inventory</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_save">Save</string>
+    <string name="action_select">Select</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="action_add">Add</string>
+    <string name="action_remove">Remove</string>
+
+    <string name="version_label">Version :</string>
+    <string name="rf_power_label">RF Power Level :</string>
+    <string name="connection_state_label">Connection State :</string>
+    <string name="connection_state_connected">CONNECTED</string>
+    <string name="connection_state_connecting">CONNECTING</string>
+    <string name="connection_state_disconnected">DISCONNECTED</string>
+
+    <string name="paired_devices">Paired Devices</string>
+    <string name="discovering_devices">Discovering Devices</string>
+
+    <string name="selection_mask_setting_label">Selection Mask Setting</string>
+    <string name="inventory_setting_label">Inventory Setting</string>
+
+    <string name="select_mask_bank">Bank</string>
+    <string name="select_mask_target">Target</string>
+    <string name="select_mask_action">Action</string>
+    <string name="select_mask_offset">Offset</string>
+    <string name="select_mask_length">Length</string>
+    <string name="select_mask_data">Mask</string>
+
+    <string name="use_selection_mask">Use Selection Mask</string>
+    <string name="inventory_option_session">Session</string>
+    <string name="inventory_option_target">Target</string>
+    <string name="inventory_option_select_flag">Select Flag</string>
+
+    <string name="msg_question_denied_permission">If the permission is not granted, the app will not execute.\nAre you sure you want to set the permission again?</string>
+    <string name="msg_exit_denied_permission">Permission is denied. the app is not executed.</string>
+    <string name="msg_question_permanent_denied_permission">The permission is permanently denied.\nIf the permission is not granted, the app will not execute.\nDo you want to set permission in app settings?</string>
+    <string name="msg_delete_selection_mask">Are you sure you want to delete the selected Selection Mask?</string>
+    <string name="msg_delete_all_selection_mask">Are you sure you want to delete all Selection Masks?</string>
+
+    <string name="msg_enable_bluetooth">If the bluetooth function is not activated, the APP cannot be used.</string>
+    <string name="msg_disconnect_error">It"'"s an unusual approach Please relaunch the app.</string>
+    <string name="msg_wait">Please wait</string>
+    <string name="msg_connect_device">Connecting with device.\nPlease wait a moment.</string>
+    <string name="msg_disconnect_device">Disconnecting to device.\nPlease wait a moment.</string>
+    <string name="msg_fail_connect">Failed to connect remote device</string>
+
+    <string name="msg_fail_set_selection_mask_state">Failed to set selection mask state.</string>
+    <string name="msg_fail_set_selection_mask">Failed to set selection mask.</string>
+    <string name="msg_fail_remove_selection_mask">Failed to remove selection mask.</string>
+    <string name="msg_fail_set_session">Failed to set inventory session.</string>
+    <string name="msg_fail_set_target">Failed to set inventory target.</string>
+    <string name="msg_fail_set_select_target">Failed to set selection target.</string>
+
+    <string name="power_level_title">RF Power Level</string>
+
+    <string name="select_mask_entry_unit">Entry(s)</string>
+    <string name="select_mask_unit">bits</string>
+
+    <string name="title_add_select_mask">Add Selection Mask</string>
+    <string name="title_edit_select_mask">Edit Selection Mask</string>
+
+    <string name="select_mask_count">Selection Mask Count</string>
+    <string name="select_mask_enabled">Enabled</string>
+    <string name="select_mask_disabled">Disabled</string>
+    <string name="select_mask_session_label">Session</string>
+    <string name="select_mask_target_label">Target</string>
+    <string name="select_mask_select_flag_label">Selection Flag</string>
+
+
+
+    <string name="rfid_common_label_value_guide" translatable="false">"   0     1     2    3     4    5     6    7     8    9"</string>
+    <string name="rfid_inventory_selection_mask_info">Mask: %1$d, %2$s, </string>
+    <string name="rfid_inventory_selection_query_info">Session: %1$s, Taget: %2$s, SL: %3$s</string>
+    <string name="common_group_label_operation_settings">Operation Settings</string>
+    <string name="rfid_common_label_bank">Bank</string>
+    <string name="rfid_common_label_offset">Offset</string>
+    <string name="rfid_common_label_length">Length</string>
+    <string name="rfid_common_label_power_gain">Power Gain</string>
+    <string name="rfid_read_write_label_energizing_carrier">Energizing Carrier</string>
+    <string name="rfid_read_write_button_text_read">Read</string>
+    <string name="rfid_read_write_button_text_write">Write</string>
+    <string name="common_button_label_clear">Clear</string>
+    <string name="rfid_common_button_text_selection_mask">Selection\nMask</string>
+    <string name="rfid_common_button_text_access_password">Access\nPassword</string>
+    <string name="rfid_lock_kill_label_gourp_lock_settings">Lock Settings</string>
+    <string name="rfid_lock_kill_label_memory">Memory</string>
+    <string name="rfid_lock_kill_label_bit_kill_pwd">Kill Pwd</string>
+    <string name="rfid_lock_kill_label_bit_access_pwd">Access Pwd</string>
+    <string name="rfid_lock_kill_label_bit_epc" translatable="false">EPC</string>
+    <string name="rfid_lock_kill_label_bit_tid" translatable="false">TID</string>
+    <string name="rfid_lock_kill_label_bit_user" translatable="false">User</string>
+    <string name="rfid_lock_kill_label_lock_operation">Lock Operation</string>
+    <string name="rfid_lock_kill_label_unlock">Unlock</string>
+    <string name="rfid_lock_kill_label_perma_unlock">Perma\nUnlock</string>
+    <string name="rfid_lock_kill_label_lock">Lock</string>
+    <string name="rfid_lock_kill_label_perma_lock">Perma\nLock</string>
+    <string name="rfid_lock_kill_button_text_lock">Lock</string>
+    <string name="rfid_lock_kill_button_text_kill">Kill</string>
+    <string name="rfid_lock_kill_button_text_kill_password">Kill\nPassword</string>
+    <string name="rfid_popup_menu_item_read_write">Read/Write</string>
+    <string name="rfid_popup_menu_item_lock_kill">Lock/Kill</string>
+    <string name="rfid_alert_failed_to_set_epc_match">Failed to set EPC match!</string>
+    <string name="app_rfid_read_write_name">Rfid Read Write Configuration</string>
+    <string name="app_rfid_lock_kill_name">Rfid Lock Kill</string>
+    <string name="rfid_alert_read_fail">Failed to read!</string>
+    <string name="rfid_alert_write_value_should_not_longer_than_max_digits">Write value should not longer than %1$d digits!</string>
+    <string name="rfid_alert_must_value_word_align">Value must word align!</string>
+    <string name="rfid_read_write_edittext_hint_write_value">Max. 64 digits, HEX, WORD align</string>
+    <string name="common_unit_word">WORD(s)</string>
+    <string name="common_label_read_memory">Read Memory</string>
+    <string name="common_label_write_memory">Write Memory</string>
+    <string name="rfid_common_reserved" translatable="false">Reserved</string>
+    <string name="rfid_common_epc" translatable="false">EPC</string>
+    <string name="rfid_common_tid" translatable="false">TID</string>
+    <string name="rfid_common_user" translatable="false">User</string>
+    <string name="common_not_available">N/A</string>
+    <string name="common_enabled">Enabled</string>
+    <string name="common_disabled">Disabled</string>
+    <string name="rfid_common_epc_match_info" translatable="false">"EPC: "</string>
+    <string name="rfid_op_status_success">Success</string>
+    <string name="common_alert_success">Success!</string>
+    <string name="rfid_alert_write_fail">Failed to write!</string>
+    <string name="rfid_alert_failed_to_write_access_password">Failed to write access password!</string>
+    <string name="read_write_setting_label">Rfid Read Write</string>
+    <string name="rfid_common_label_access_password">Access Password</string>
+    <string name="common_button_label_cancel">Cancel</string>
+    <string name="rfid_alert_failed_to_save_access_password">Failed to save access password!</string>
+    <string name="common_button_label_save">Save</string>
+
+</resources>

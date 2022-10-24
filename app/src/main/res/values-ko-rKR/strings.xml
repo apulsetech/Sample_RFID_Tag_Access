@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">RFID 데모</string>
+    <string name="app_discovery_device_name">디바이스 찾기</string>
+    <string name="app_selection_mask_name">선택 마스크</string>
+
+    <string name="menu_discovery_device">디바이스 찾기</string>
+    <string name="menu_reconnect_device">디바이스 연결</string>
+    <string name="menu_disconnect_device">디바이스 해제</string>
+
+    <string name="action_start_discovering">디스커버리 시작</string>
+    <string name="action_stop_discovering">디스커버리 중지</string>
+    <string name="action_clear">초기화</string>
+    <string name="action_mask">마스크</string>
+    <string name="action_inventory">인벤토리</string>
+    <string name="action_stop">중지</string>
+    <string name="action_save">저장</string>
+    <string name="action_select">선택</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">취소</string>
+    <string name="action_yes">네</string>
+    <string name="action_no">아니오</string>
+    <string name="action_add">추가</string>
+    <string name="action_remove">제거</string>
+
+    <string name="version_label">버전 :</string>
+    <string name="rf_power_label">RF 파워 레벨 :</string>
+    <string name="connection_state_label">연결 상태 :</string>
+    <string name="connection_state_connected">연결됨</string>
+    <string name="connection_state_connecting">연결중</string>
+    <string name="connection_state_disconnected">연결안됨</string>
+
+    <string name="paired_devices">페어링된 디바이스</string>
+    <string name="discovering_devices">디바이스 검색</string>
+
+    <string name="selection_mask_setting_label">선택 마스크 설정</string>
+    <string name="inventory_setting_label">인벤토리 설정</string>
+
+    <string name="select_mask_bank">뱅크</string>
+    <string name="select_mask_target">타겟</string>
+    <string name="select_mask_action">액션</string>
+    <string name="select_mask_offset">오프셋</string>
+    <string name="select_mask_length">길이</string>
+    <string name="select_mask_data">마스크</string>
+
+    <string name="use_selection_mask">선택 마스크 사용</string>
+    <string name="inventory_option_session">세션</string>
+    <string name="inventory_option_target">타겟</string>
+    <string name="inventory_option_select_flag">선택 플래그</string>
+
+    <string name="msg_question_denied_permission">권한이 부여되지 않으면 앱이 실행되지 않습니다.\n권한을 다시 설정하시겠습니까?</string>
+    <string name="msg_exit_denied_permission">권한이 거부되었습니다. 앱이 실행되지 않습니다.</string>
+    <string name="msg_question_permanent_denied_permission">권한이 영구적으로 거부되었습니다.\n권한이 부여되지 않으면 앱이 실행되지 않습니다.\n앱 설정에서 권한을 설정하시겠습니까?</string>
+    <string name="msg_delete_selection_mask">선택한 선택 마스크를 삭제하시겠습니까?</string>
+    <string name="msg_delete_all_selection_mask">모든 선택 마스크를 삭제하시겠습니까?</string>
+
+    <string name="msg_enable_bluetooth">블루투스 기능이 활성화되어 있지 않으면 앱을 사용할 수 없습니다.</string>
+    <string name="msg_disconnect_error">비정상적인 접근입니다 앱을 다시 실행하세요.</string>
+    <string name="msg_wait">잠시 기다려주세요.</string>
+    <string name="msg_connect_device">장치와 연결 중입니다.\n잠시 기다려 주십시오.</string>
+    <string name="msg_disconnect_device">장치 연결을 해제하는 중입니다.\n잠시 기다려 주십시오.</string>
+    <string name="msg_fail_connect">원격 장치 연결 실패</string>
+
+    <string name="msg_fail_set_selection_mask_state">선택 마스크 상태를 설정하지 못했습니다.</string>
+    <string name="msg_fail_set_selection_mask">선택 마스크를 설정하지 못했습니다.</string>
+    <string name="msg_fail_remove_selection_mask">선택 마스크를 제거하지 못했습니다.</string>
+    <string name="msg_fail_set_session">인벤토리 세션을 설정하지 못했습니다.</string>
+    <string name="msg_fail_set_target">인벤토리 타겟을 설정하지 못했습니다.</string>
+    <string name="msg_fail_set_select_target">선택 대상을 설정하지 못했습니다.</string>
+
+    <string name="power_level_title">RF 파워 레벨</string>
+
+    <string name="select_mask_entry_unit">엔트리(s)</string>
+    <string name="select_mask_unit">비트</string>
+
+    <string name="title_add_select_mask">선택 마스크 추가</string>
+    <string name="title_edit_select_mask">선택 마스크 수정</string>
+
+    <string name="select_mask_count">선택 마스크 카운트</string>
+    <string name="select_mask_enabled">활성화</string>
+    <string name="select_mask_disabled">비활성화</string>
+    <string name="select_mask_session_label">세션</string>
+    <string name="select_mask_target_label">타겟</string>
+    <string name="select_mask_select_flag_label">선택 플래그</string>
+
+
+    <string name="rfid_inventory_selection_mask_info">마스크: %1$d, %2$s, </string>
+    <string name="rfid_inventory_selection_query_info">세션: %1$s, Taget: %2$s, SL: %3$s</string>
+    <string name="common_group_label_operation_settings">작동 설정</string>
+    <string name="rfid_common_label_bank">뱅크</string>
+    <string name="rfid_common_label_offset">오프셋</string>
+    <string name="rfid_common_label_length">길이</string>
+    <string name="rfid_common_label_power_gain">RF 파워</string>
+    <string name="rfid_read_write_label_energizing_carrier">에너지 반송파</string>
+    <string name="rfid_read_write_button_text_read">읽기</string>
+    <string name="rfid_read_write_button_text_write">쓰기</string>
+    <string name="common_button_label_clear">초기화</string>
+    <string name="rfid_common_button_text_selection_mask">선택\n마스크</string>
+    <string name="rfid_common_button_text_access_password">액세스\n패스워드</string>
+    <string name="rfid_lock_kill_label_gourp_lock_settings">락 설정</string>
+    <string name="rfid_lock_kill_label_memory">메모리</string>
+    <string name="rfid_lock_kill_label_bit_kill_pwd" translatable="false">킬 패스워드</string>
+    <string name="rfid_lock_kill_label_bit_access_pwd" translatable="false">액세스 패스워드</string>
+    <string name="rfid_lock_kill_label_lock_operation">락 작동</string>
+    <string name="rfid_lock_kill_label_unlock">언락</string>
+    <string name="rfid_lock_kill_label_perma_unlock">영구\n언락</string>
+    <string name="rfid_lock_kill_label_lock">락</string>
+    <string name="rfid_lock_kill_label_perma_lock">영구\n락</string>
+    <string name="rfid_lock_kill_button_text_lock">락</string>
+    <string name="rfid_lock_kill_button_text_kill">킬</string>
+    <string name="rfid_lock_kill_button_text_kill_password">킬\n패스워드</string>
+    <string name="rfid_popup_menu_item_read_write">읽기/쓰기</string>
+    <string name="rfid_popup_menu_item_lock_kill">락/킬</string>
+    <string name="rfid_alert_failed_to_set_epc_match">EPC 매치를 설정하지 못했습니다!</string>
+    <string name="app_rfid_read_write_name">RFID 읽기 쓰기 구성</string>
+    <string name="app_rfid_lock_kill_name">RFID 락 킬</string>
+    <string name="rfid_alert_read_fail">리드에 실패했습니다.</string>
+    <string name="rfid_alert_write_value_should_not_longer_than_max_digits">쓰기 값은 %1$d자리를 초과할 수 없습니다!</string>
+    <string name="rfid_alert_must_value_word_align">값은 단어 정렬이어야 합니다!</string>
+    <string name="rfid_read_write_edittext_hint_write_value">최대 64자리, HEX, WORD 정렬</string>
+    <string name="common_unit_word">WORD(s)</string>
+    <string name="common_label_read_memory">메모리 읽기</string>
+    <string name="common_label_write_memory">메모리 쓰기</string>
+    <string name="common_not_available">N/A</string>
+    <string name="common_enabled">활성화</string>
+    <string name="common_disabled">비활성화</string>
+    <string name="rfid_op_status_success">성공</string>
+    <string name="common_alert_success">성공!</string>
+    <string name="rfid_alert_write_fail">쓰기에 실패하였습니다!</string>
+    <string name="rfid_alert_failed_to_write_access_password">액세스 패스워드를 쓰지 못했습니다!</string>
+    <string name="read_write_setting_label">RFID 읽기 쓰기</string>
+    <string name="rfid_common_label_access_password">액세스 패스워드</string>
+    <string name="common_button_label_cancel">취소</string>
+    <string name="rfid_alert_failed_to_save_access_password">액세스 비밀번호를 저장하지 못했습니다!</string>
+    <string name="common_button_label_save">저장</string>
+
+</resources>

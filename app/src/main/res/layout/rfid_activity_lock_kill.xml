@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/theme_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:background="@color/color_info_text_background">
+
+        <TextView
+            android:id="@+id/rfid_lock_kill_textview_selection_mask_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rfid_inventory_selection_mask_info"
+            android:textAppearance="@style/theme_rfid_common_info_text_style"/>
+
+        <View android:layout_width="4dp" android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/rfid_lock_kill_textview_selection_mask_inventory_setting_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rfid_inventory_selection_query_info"
+            android:textAppearance="@style/theme_rfid_common_info_text_style"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rfid_lock_kill_textview_ecp_match_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:textAppearance="@style/theme_rfid_common_info_text_style"
+        android:background="@color/color_info_text_background"
+        android:visibility="gone"/>
+
+    <View android:layout_width="match_parent" android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rfid_lock_kill_label_gourp_lock_settings"
+            android:textAppearance="@style/theme_content_normal_label_group_text_style"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/theme_group_seperator2">
+
+            <LinearLayout
+                android:id="@+id/rfid_lock_kill_layout_lock_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/rfid_lock_kill_label_memory"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/theme_content_normal_label_group_content_text_style"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/rfid_lock_kill_label_bit_kill_pwd"
+                        android:textAppearance="@style/theme_content_normal_label_group_content_text_small_style"
+                        android:background="@color/color_group_content_cell_color1"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/rfid_lock_kill_label_bit_access_pwd"
+                        android:textAppearance="@style/theme_content_normal_label_group_content_text_smaller_style"
+                        android:background="@color/color_group_content_cell_color2"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/rfid_lock_kill_label_bit_epc"
+                        android:textAppearance="@style/theme_content_normal_label_group_content_text_small_style"
+                        android:background="@color/color_group_content_cell_color1"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/rfid_lock_kill_label_bit_tid"
+                        android:textAppearance="@style/theme_content_normal_label_group_content_text_small_style"
+                        android:background="@color/color_group_content_cell_color2"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/rfid_lock_kill_label_bit_user"
+                        android:textAppearance="@style/theme_content_normal_label_group_content_text_small_style"
+                        android:background="@color/color_group_content_cell_color1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/rfid_lock_kill_checkbox_mask_kill_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color1"/>
+
+                    <CheckBox
+                        android:id="@+id/rfid_lock_kill_checkbox_mask_access_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color2"/>
+
+                    <CheckBox
+                        android:id="@+id/rfid_lock_kill_checkbox_mask_epc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color1"/>
+
+                    <CheckBox
+                        android:id="@+id/rfid_lock_kill_checkbox_mask_tid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color2"/>
+
+                    <CheckBox
+                        android:id="@+id/rfid_lock_kill_checkbox_mask_user"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/rfid_lock_kill_label_lock_operation"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/theme_content_normal_label_group_content_text_style"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rfid_lock_kill_radio_group_kill_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color1">
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_kill_password_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_kill_password_perma_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_kill_password_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_kill_password_perma_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rfid_lock_kill_radio_group_access_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color2">
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_access_password_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_access_password_perma_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_access_password_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_access_password_perma_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rfid_lock_kill_radio_group_epc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color1">
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_epc_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_epc_perma_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_epc_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_epc_perma_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rfid_lock_kill_radio_group_tid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color2">
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_tid_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_tid_perma_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_tid_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_tid_perma_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rfid_lock_kill_radio_group_user"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_group_content_cell_color1">
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_user_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_user_perma_unlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_unlock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_user_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/rfid_lock_kill_label_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                        <RadioButton
+                            android:id="@+id/rfid_lock_kill_radio_button_user_perma_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rfid_lock_kill_label_perma_lock"
+                            android:textAppearance="@style/theme_content_normal_label_group_content_text_very_small_style"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <View android:layout_width="match_parent" android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/common_group_label_operation_settings"
+            android:textAppearance="@style/theme_content_normal_label_group_text_style"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/theme_group_seperator2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:text="@string/rfid_common_label_power_gain"
+                    android:textColor="@color/color_label_text"/>
+
+                <Spinner
+                    android:id="@+id/rfid_lock_kill_spinner_power_gain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/rfid_lock_kill_op_result"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/color_text_status_success"
+            android:background="@color/color_background_status_none"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/rfid_lock_kill_button_lock"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/rfid_lock_kill_button_text_lock"
+                android:textAppearance="@style/theme_button_text_small"/>
+
+            <Button
+                android:id="@+id/rfid_lock_kill_button_kill"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/rfid_lock_kill_button_text_kill"
+                android:textAppearance="@style/theme_button_text_small"/>
+
+            <Button
+                android:id="@+id/rfid_lock_kill_button_selection_mask"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/rfid_common_button_text_selection_mask"
+                android:textAppearance="@style/theme_button_text_small"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/rfid_lock_kill_button_clear"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/common_button_label_clear"
+                android:textAppearance="@style/theme_button_text_small"/>
+
+            <Button
+                android:id="@+id/rfid_lock_kill_button_access_password"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/rfid_common_button_text_access_password"
+                android:textAppearance="@style/theme_button_text_small"/>
+
+            <Button
+                android:id="@+id/rfid_lock_kill_button_kill_password"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/rfid_lock_kill_button_text_kill_password"
+                android:textAppearance="@style/theme_button_text_small"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
